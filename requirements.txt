@@ -1,2 +1,4 @@
 sendgrid
 Django
+django-heroku
+gunicorn
