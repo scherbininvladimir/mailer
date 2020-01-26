@@ -1,0 +1,15 @@
+<a href="/">На главную</a>
+<table>
+    {% for m in object_list %}
+    <tr>
+        <td>{{ m.msg }}</td>
+        <td>
+            {% if m.is_sent %}
+                Отправлено
+            {% else %}    
+                В очереди
+            {% endif %}
+        </td>
+    </tr>
+    {% endfor %}
+</table>

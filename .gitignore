@@ -1,2 +1,4 @@
 __pycache__/
 secret.env
+.vscode/settings.json
+db.sqlite3

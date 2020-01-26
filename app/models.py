@@ -1,3 +1,6 @@
 from django.db import models
 
-# Create your models here.
+class Message(models.Model):
+    msg = models.TextField('Текст сообшения')
+    delay = models.IntegerField('Отправить через (сек)')
+    is_sent = models.BooleanField(default=False)
